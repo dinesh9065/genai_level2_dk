@@ -1,0 +1,2 @@
+# genai_level2_dk
+Generative_AI_practice
