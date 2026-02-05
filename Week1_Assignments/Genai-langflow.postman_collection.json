@@ -1,0 +1,159 @@
+{
+  "info": {
+    "_postman_id": "16290003-7083-4e2e-b2ea-b8cc5b9cae78",
+    "name": "Genai-langflow",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "50444295",
+    "_collection_link": "https://go.postman.co/collection/50444295-16290003-7083-4e2e-b2ea-b8cc5b9cae78?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "TestGenAPiLang",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "sk-ATA5KDhcW7WYb0FNpViZ1LIODabckAKa7D8gQ8xQDBg",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"output_type\": \"chat\",\r\n    \"input_type\": \"chat\",\r\n    \"input_value\": \"Generate ONLY 1 Test case for UPI payment gateway\",\r\n    \"tweaks\": {\r\n        \"GroqModel-p3OuU\": {\r\n            \"temperature\": 0.1\r\n        }\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:7860/api/v1/run/9b9f3a6d-06dd-4a0b-90c4-99589a6891c8",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "7860",
+          "path": [
+            "api",
+            "v1",
+            "run",
+            "9b9f3a6d-06dd-4a0b-90c4-99589a6891c8"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "UserStoryRating",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "sk-ATA5KDhcW7WYb0FNpViZ1LIODabckAKa7D8gQ8xQDBg",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"output_type\": \"chat\",\r\n    \"input_type\": \"chat\",\r\n    \"input_value\": \"Generate Test case for UPI payment gateway\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:7860/api/v1/run/9b9f3a6d-06dd-4a0b-90c4-99589a6891c8",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "7860",
+          "path": [
+            "api",
+            "v1",
+            "run",
+            "9b9f3a6d-06dd-4a0b-90c4-99589a6891c8"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ExtractorDocument",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "sk-ATA5KDhcW7WYb0FNpViZ1LIODabckAKa7D8gQ8xQDBg",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"output_type\": \"chat\",\r\n    \"input_type\": \"chat\",\r\n    \"input_value\": \"Generate Test case for UPI payment gateway\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:7860/api/v1/run/9b9f3a6d-06dd-4a0b-90c4-99589a6891c8",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "7860",
+          "path": [
+            "api",
+            "v1",
+            "run",
+            "9b9f3a6d-06dd-4a0b-90c4-99589a6891c8"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ApiExtractorLangflow",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "sk-ATA5KDhcW7WYb0FNpViZ1LIODabckAKa7D8gQ8xQDBg",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"output_type\": \"chat\",\r\n    \"input_type\": \"chat\",\r\n    \"tweaks\": {\r\n        \"GroqModel-UbXUL\": {\r\n            \"api_key\": \"GroqApi_1\",\r\n            \"temperature\": 0.1\r\n        },\r\n        \"ChatInput-xWgiV\": {\r\n            \"input_value\": \"please get the invoice  number\"\r\n        }\r\n    }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:7860/api/v1/run/ae65234a-f3dd-4e66-ab87-bee678068074",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "7860",
+          "path": [
+            "api",
+            "v1",
+            "run",
+            "ae65234a-f3dd-4e66-ab87-bee678068074"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
