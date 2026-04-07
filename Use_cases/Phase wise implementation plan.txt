@@ -1,0 +1,70 @@
+Agent-Orchestrated Test Execution (with HITL)
+Phase 1: Core Flow ( Agent + HITL + Execution)
+Objective:
+Establish the end-to-end test execution loop with human validation.
+
+Components:
+- Frontend: Scenario input (natural language/structured)
+- Agent Layer: Parses scenario and triggers retrieval
+- RAG: Fetch relevant test cases from vector DB
+- HITL: Human validates selected test cases
+- Static Test Data: Mock/JSON-based data
+- Execution: Playwright-based execution via MCP
+- Reporting: Logs, screenshots, pass/fail reports
+
+Output:
+- Fully functional agent-driven test execution loop with human validation
+
+
+Phase 2: Dynamic Test Data Integration (Athena)
+Objective:
+Enable dynamic, real-time test data fetching.
+
+Enhancements:
+- Integration with Amazon Athena
+- Data mapping layer (test fields → DB schema)
+- Runtime data injection into test execution
+- Fallback to static data
+
+Output:
+- Realistic and scalable test data handling
+
+
+
+Phase 3: Script Generation & Framework Completion
+Objective:
+Automate test script creation and standardize framework.
+
+Enhancements:
+- AI-based Playwright script generation
+- Page Object Model (POM) adoption
+- Framework structuring (tests/pages/utils)
+- Execution optimization (parallel runs, retries)
+
+Output:
+- Scalable and maintainable automation framework
+
+
+
+
+Phase 4: Advanced AI Mapping & Intelligence
+Objective:
+Build a self-learning, intelligent QA system.
+
+Enhancements:
+- Advanced semantic mapping
+- Auto test case generation
+- Feedback learning loop (HITL + execution results)
+- Failure analysis and self-healing
+- Intelligent reporting (trends, RCA)
+
+Output:
+- AI-driven QA ecosystem with continuous improvement
+
+
+Final Architecture Evolution:
+Phase 1: Manual-assisted intelligent execution
+Phase 2: Data-aware execution
+Phase 3: Automated script generation
+Phase 4: Self-learning AI QA system
+

@@ -1,0 +1,53 @@
+Usecase Ideas 
+
+(Tehnical usecases [2-3] + Business usecases [2-3])
+
+Technical use cases - 
+1)Based on user input(Scenario) -> Fetch the testcase from ( RAG) and execute via playwright MCP ( phase 1)
+   a) Business Impact -       Scorecard : 4 x 2   = 8
+   b) Frequency -             Scorecard : 5 x 1.5 = 7.5
+   b) Input Quality -         Scorecard : 3 x 2   = 6
+   c) Output -                Scorecard : 4 x 1.5 = 6
+   d) Ease of validation-     Scorecard : 3 x 1.5 = 4.5
+   e) Integration Complexity  Scorecard : 3 x 1   = 3
+   f) Implementation Effort   Scorecard : 3 x 1   = 3
+   g) Risk/ComplainceExposure Scorecard : 3 x 1   = 3
+  
+  Overall = 41
+   
+2)Smart test Regression plan  - Analyse defect from Test Management tool  and identify impact area and execute test case
+   a) Business Impact -       Scorecard : 3 x 2   = 6
+   b) Frequency -             Scorecard : 3 x 1.5 = 4.5
+   b) Input Quality -         Scorecard : 3 x 2   = 6
+   c) Output -                Scorecard : 4 x 1.5 = 6
+   d) Ease of validation-     Scorecard : 4 x 1.5 = 4.5
+   e) Integration Complexity  Scorecard : 4 x 1   = 3
+   f) Implementation Effort   Scorecard : 2 x 1   = 2
+   g) Risk/ComplainceExposure Scorecard : 2 x 1   = 3
+  
+   Overall = 35
+  
+Business usecases -
+1)Test data retrieval from Athena based on the requirement.
+   a) Business Impact -       Scorecard : 4 x 2   = 8
+   b) Frequency -             Scorecard : 4 x 1.5 = 6
+   b) Input Quality -         Scorecard : 3 x 2   = 6
+   c) Output -                Scorecard : 4 x 1.5 = 6
+   d) Ease of validation-     Scorecard : 3 x 1.5 = 4.5
+   e) Integration Complexity  Scorecard : 3 x 1   = 3
+   f) Implementation Effort   Scorecard : 3 x 1   = 2
+   g) Risk/ComplainceExposure Scorecard : 2 x 1   = 3
+  
+   Overall = 39.5
+   
+2)QA Chatbot Agent - Guides the user for functionlity
+   a) Business Impact -       Scorecard : 3 x 2   = 6
+   b) Frequency -             Scorecard : 3 x 1.5 = 4.5
+   b) Input Quality -         Scorecard : 2 x 2   = 4
+   c) Output -                Scorecard : 3 x 1.5 = 6
+   d) Ease of validation-     Scorecard : 3 x 1.5 = 4.5
+   e) Integration Complexity  Scorecard : 3 x 1   = 3
+   f) Implementation Effort   Scorecard : 2 x 1   = 2
+   g) Risk/ComplainceExposure Scorecard : 2 x 1   = 3
+   
+   Overall = 34

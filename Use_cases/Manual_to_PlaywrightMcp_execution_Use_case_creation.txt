@@ -1,0 +1,117 @@
+Agent-Orchestrated Test Execution (with HITL)
+
+Flow:
+User inputs scenario (frontend)
+Agent fetches relevant test cases (DB) (RAG implementation)
+Human validates selected test case(s) (HITL)
+Fetch test data (start with static/mock) - ( planning to integrate athena to fetch data - in future phase )
+Execute using Playwright MCP
+Generate report + artifacts
+
+
+Future phases :
+Athena (Dynamic Test Data Integration- Test data mapping )
+Script generation - framework completion
+Advanced AI mapping
+
+
+- testcases (primary)
+
+1) Business Impact
+
+- Effort Savings ( 4 x 3 = 12 hours / day)
+- Assumption : Quality of generated tests ! > 70% accuracy (1 person can fix it)
+- Incurring Cost : Building cost (2 people x 2 months) - cost : 
+- Cost of tokens/LLM : Low
+- Cost of Infrastructure :
+- Return on Investment : 3-4 months --> ROI reached ! 
+- 4-6 months with 2 people working can be done 
+
+Scorecard : 
+
+- 4 x 2 = 8
+
+2) Frequency 
+
+- Every day (average time = 6 hours / day)
+- All 4 team members in this
+
+Scorecard : 
+
+- 5 x 1.5 = 7.5
+
+
+3) Input Quality
+
+- Application Stable : Medium Stability (Ongoing development)
+- Environment : QA 
+- Testcase Quality : Medium to High (Varies by people and standards to normalise)
+- Testdata Quality : will be covered in phase 2 
+- Framework Quality : High (Working as expected - 500+ existing scripts)
+- Documentation Quality : Low to Medium (Require update using ai)
+
+Scorecard : 
+
+- 3 x 2 = 6
+
+4) Output 
+- RAG implementation fetch test case
+- Playwright mcp Execution and artifacts generation in phase 1 
+- Logs, Snapshots, video, traces
+- If it fails, rerun stores the outcome - 
+- If successful, 
+
+Scorecard : 
+
+- 4 x 1.5 = 6
+
+
+5) Ease of validation (Feedback mechanism)
+
+- Report  + Traces + snapshot / video
+
+Scorecard :
+
+- 3 x 1.5 = 4.5
+
+6) Integration Complexity
+
+- Integration components : 
+-Upload test case in Vector DB 
+-test case and playwright mcp
+- athena ( future phase)
+- generate code and conver to framework ( future phase)
+
+Scorecard :
+
+- 3 x 1 = 3
+
+7) Implementation Effort 
+
+- Phase 1 (1-3 weeks) -- Retieval - 
+_ phase 2 ( Playwright mcp execution ) 
+- phase 3 ( athena retieval for test data )
+- phase 4 ( playwright code generation)
+- phase 5 ( code to playwright frmework convertion)
+- Phase 0 (Discovery)
+
+ --> Phase wise (3/5)
+
+Scorecard :
+
+- 3 x 1 = 3
+
+8) Risk / Complaince Exposure
+
+- Security : yet to explore
+- LLM API Keys - not a paid version 
+- Moderation Layer / Proxy Layer - yet to explore 
+- Production : No
+- Human Review : after HIL then only execution starts
+
+Scorecard :
+
+- 3 x 1 = 3
+
+
+ Overall = 41
